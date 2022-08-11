@@ -15,6 +15,18 @@ Color transparentColor = Colors.transparent;
 Color inputFieldColor = Color(0xffF1F0F5);
 
 // Note: Text Styles
+TextStyle splashTextStyle =
+    GoogleFonts.poppins(color: whiteColor, fontSize: 32, fontWeight: semiBold);
+
+TextStyle titleTextStyle =
+    GoogleFonts.poppins(color: greyColor, fontSize: 16, fontWeight: medium);
+
+TextStyle subTitleTextStyle =
+    GoogleFonts.poppins(color: blackColor, fontSize: 24, fontWeight: semiBold);
+
+TextStyle buttonTextStyle =
+    GoogleFonts.poppins(color: whiteColor, fontWeight: medium);
+
 TextStyle purpleTextStyle = GoogleFonts.poppins(
   color: primaryColor,
 );

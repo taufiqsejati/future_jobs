@@ -72,19 +72,14 @@ class OnboardingPage extends StatelessWidget {
                 child: Container(
                   width: 200,
                   height: 45,
-                  child: TextButton(
+                  child: OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                        side: BorderSide(color: whiteColor),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(66))),
                     onPressed: () {
                       Navigator.pushNamed(context, '/sign-in');
                     },
-                    style: TextButton.styleFrom(
-                      backgroundColor: transparentColor,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(66),
-                        side: BorderSide(
-                          color: whiteColor,
-                        ),
-                      ),
-                    ),
                     child: Text(
                       'Sign In',
                       style: whiteTextStyle.copyWith(

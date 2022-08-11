@@ -143,7 +143,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   borderSide: BorderSide(
                     color: EmailValidator.validate(emailController.text)
                         ? primaryColor
-                        : Colors.red,
+                        : redColor,
                   ),
                 ),
                 border: OutlineInputBorder(
