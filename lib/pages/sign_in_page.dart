@@ -238,25 +238,19 @@ class _SignInPageState extends State<SignInPage> {
       body: SafeArea(
         child: Container(
           width: MediaQuery.of(context).size.width,
-          // padding: EdgeInsets.symmetric(
-          //   horizontal: defaultMargin,
-          // ),
+          padding: EdgeInsets.symmetric(
+            horizontal: defaultMargin,
+          ),
           child: ListView(
+            shrinkWrap: true,
+            physics: BouncingScrollPhysics(),
             children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: defaultMargin),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    header(),
-                    illustration(),
-                    inputEmail(),
-                    inputPassword(),
-                    signInButton(),
-                    signUpButton(),
-                  ],
-                ),
-              ),
+              header(),
+              illustration(),
+              inputEmail(),
+              inputPassword(),
+              signInButton(),
+              signUpButton(),
             ],
           ),
         ),

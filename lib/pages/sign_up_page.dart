@@ -8,6 +8,7 @@ class SignUpPage extends StatefulWidget {
 }
 
 class _SignUpPageState extends State<SignUpPage> {
+  bool isUploaded = false;
   TextEditingController nameController = TextEditingController(text: '');
   TextEditingController emailController = TextEditingController(text: '');
   TextEditingController passwordController = TextEditingController(text: '');
@@ -55,8 +56,23 @@ class _SignUpPageState extends State<SignUpPage> {
               color: primaryColor,
             ),
           ),
-          child: Image.asset(
-            'assets/image_profile.png',
+          child: ClipOval(
+            child: Material(
+              child: InkWell(
+                onTap: () {
+                  setState(() {
+                    isUploaded = !isUploaded;
+                  });
+                },
+                child: isUploaded
+                    ? Image.asset(
+                        'assets/image_profile.png',
+                      )
+                    : Image.asset(
+                        'assets/icon_upload.png',
+                      ),
+              ),
+            ),
           ),
         ),
       );
@@ -308,6 +324,8 @@ class _SignUpPageState extends State<SignUpPage> {
             horizontal: defaultMargin,
           ),
           child: ListView(
+            shrinkWrap: true,
+            physics: BouncingScrollPhysics(),
             children: [
               header(),
               inputImage(),
