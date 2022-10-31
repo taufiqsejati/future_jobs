@@ -1,6 +1,8 @@
 # future_jobs
 
-A new Flutter project.
+A new Flutter project : Future Jobs.
+
+Aplikasi ini dipergunakan untuk pelatihan kelas BWA.
 
 ## Getting Started
 
