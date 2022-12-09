@@ -266,7 +266,7 @@ class _DetailPageState extends State<DetailPage> {
     }
 
     return Scaffold(
-      body: Center(
+      body: SafeArea(
         child: ListView(
           padding: EdgeInsets.symmetric(
             horizontal: defaultMargin,

@@ -163,38 +163,47 @@ class HomePage extends StatelessWidget {
     }
 
     Widget bottomNavBar() {
-      return BottomNavigationBar(
-        elevation: 0,
-        items: [
-          BottomNavigationBarItem(
-            icon: Image.asset(
-              'assets/icon_home.png',
-              width: 24,
+      return Container(
+        margin: const EdgeInsets.only(top: 30),
+        child: BottomNavigationBar(
+          showSelectedLabels: false,
+          unselectedItemColor: Color(0xffB3B54),
+          selectedItemColor: Color(0xff272c2f),
+          type: BottomNavigationBarType.fixed,
+          currentIndex: 0,
+          elevation: 0,
+          iconSize: 24,
+          items: [
+            BottomNavigationBarItem(
+              icon: Image.asset(
+                'assets/icon_home.png',
+                width: 24,
+              ),
+              label: '',
             ),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Image.asset(
-              'assets/icon_notification.png',
-              width: 24,
+            BottomNavigationBarItem(
+              icon: Image.asset(
+                'assets/icon_notification.png',
+                width: 24,
+              ),
+              label: '',
             ),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Image.asset(
-              'assets/icon_love.png',
-              width: 24,
+            BottomNavigationBarItem(
+              icon: Image.asset(
+                'assets/icon_love.png',
+                width: 24,
+              ),
+              label: '',
             ),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Image.asset(
-              'assets/icon_user.png',
-              width: 24,
+            BottomNavigationBarItem(
+              icon: Image.asset(
+                'assets/icon_user.png',
+                width: 24,
+              ),
+              label: '',
             ),
-            label: '',
-          ),
-        ],
+          ],
+        ),
       );
     }
 
