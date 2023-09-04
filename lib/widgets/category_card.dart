@@ -7,7 +7,7 @@ class CategoryCard extends StatelessWidget {
   final String name;
   final String imageUrl;
 
-  CategoryCard({this.imageUrl, this.name});
+  CategoryCard({required this.imageUrl, required this.name});
 
   @override
   Widget build(BuildContext context) {

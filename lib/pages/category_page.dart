@@ -6,7 +6,7 @@ class CategoryPage extends StatelessWidget {
   final String name;
   final String imageUrl;
 
-  CategoryPage({this.imageUrl, this.name});
+  CategoryPage({required this.imageUrl, required this.name});
 
   @override
   Widget build(BuildContext context) {

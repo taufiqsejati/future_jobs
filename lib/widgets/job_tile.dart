@@ -9,9 +9,9 @@ class JobTile extends StatelessWidget {
   final String companyLogo;
 
   JobTile({
-    this.name,
-    this.companyName,
-    this.companyLogo,
+    required this.name,
+    required this.companyName,
+    required this.companyLogo,
   });
 
   @override
